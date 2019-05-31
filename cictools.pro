@@ -26,7 +26,12 @@ CONFIG += static
 TEMPLATE=subdirs
   CONFIG += ordered
   SUBDIRS = cic-graphics \
-  cic2png
+  cic2png \
+  cic2eps \
+  cic2scriptcraft \
+  cic2tikz \
+  cic-gui
+
 
 
 

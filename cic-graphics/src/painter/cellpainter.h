@@ -23,6 +23,9 @@
 #define CIC_CORE_CELLPAINTER_H
 
 #include "core/layoutcell.h"
+#include <QtCore>
+#include <QPainter>
+#include <QColor>
 #include <QObject>
 #include <QString>
 #include <cmath>

@@ -17,9 +17,9 @@
   ##   along with this program.  If not, see <http://www.gnu.org/licenses/>.
   ######################################################################
 
-  QT += core
+  QT += core widgets
 
-  CONFIG += qt console
+  CONFIG += qt 
   CONFIG += staticlib
   CONFIG += c++11
 

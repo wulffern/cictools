@@ -19,6 +19,7 @@
 
 
 #include "cic-core.h"
+#include "cic-graphics.h"
 #include <iostream>
 #include <QDebug>
 #include <QString>
@@ -62,17 +63,17 @@ int main(int argc, char *argv[])
 
         if(argc >=  3){
             QString file = argv[1];
-	    QString rules = argv[2];
-	    QString filename = argv[3];
+	        QString rules = argv[2];
+	        QString filename = argv[3];
             QString outfilename = "outfile";
             
             if(filename == ""){
-                QRegularExpression re("^(.*)\\.cicl");
+                QRegularExpression re("^(.*)\\.cic");
                 QRegularExpressionMatch m = re.match(file);
                 filename = m.captured(1) + ".hier";
             }
 
-            QRegularExpression re1("/?([^\\/]+)\\.cicl");
+            QRegularExpression re1("/?([^\\/]+)\\.cic");
             QRegularExpressionMatch m1 = re1.match(file);
             outfilename = m1.captured(1);
 

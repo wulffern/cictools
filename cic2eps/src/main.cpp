@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
             eps->print(d,cell);
 
         }else{
-            qWarning() << "Usage: cic2eps <CIC file> <Technology file> [<Cell>]";
+            qWarning() << "Usage: cic2eps <CIC file> <Technology file> <Cell>";
         }
 
     }catch(...){

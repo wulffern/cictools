@@ -72,7 +72,7 @@ namespace cIcGui{
                 continue;
             }
             QListWidgetItem * item = new QListWidgetItem(l->name);
-            item->setIcon(l->icon());
+            item->setIcon(widget->getIcon(l));
             listLayers->addItem(item);
         }
 

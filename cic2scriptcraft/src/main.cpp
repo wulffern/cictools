@@ -19,6 +19,7 @@
 
 
 #include "cic-core.h"
+#include "cic-graphics.h"
 #include <iostream>
 #include <QDebug>
 #include <QString>

@@ -25,8 +25,10 @@
 #include <QKeyEvent>
 #include <QApplication>
 #include "cic-core.h"
+#include "cic-graphics.h"
 #include <QRubberBand>
 #include <QRect>
+#include <QPixmap>
 using namespace cIcCore;
 using namespace cIcPainter;
 
@@ -59,6 +61,10 @@ public:
     void moveDown();
     void fit();
     void zoomArea(QRect r);
+    QPixmap getIcon(Layer *l);
+    QImage drawColorIconProof(QColor color, const QImage & alpha);
+    QImage icon(int size);
+    void drawColorIcon(QPainter & p, QColor color, const QImage & alpha);
     
     
     virtual void update();
